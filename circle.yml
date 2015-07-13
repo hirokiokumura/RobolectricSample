@@ -1,0 +1,11 @@
+machine:
+  java:
+    version: openjdk7
+test:
+  override:
+    - echo "Nothing to do here"
+deployment:
+  master:
+    branch: master
+    commands:
+      - ./gradlew assemble
