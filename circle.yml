@@ -3,7 +3,7 @@ machine:
     version: openjdk7
 test:
   override:
-    - echo "Nothing to do here"
+    - ./gradlew test
 deployment:
   master:
     branch: master
