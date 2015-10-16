@@ -1,2 +1,3 @@
 # RobolectricSample
-https://circleci.com/gh/hirokiokumura/RobolectricSample.png
+
+![CircleCI](https://circleci.com/gh/hirokiokumura/RobolectricSample.png)
