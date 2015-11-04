@@ -16,7 +16,7 @@ test:
     - $ANDROID_HOME/tools/emulator -avd circleci-android22 -no-skin -no-audio -no-window:
                 background: true
                 parallel: true
-#    - circle-android wait-for-boot
+    - circle-android wait-for-boot
 #    - ./wait.sh:
 #                parallel: true
   override:
