@@ -11,7 +11,7 @@ dependencies:
     - echo y | android update sdk --no-ui --all --filter extra-google-m2repository,extra-android-m2repository,build-tools-23.0.1,android-23
 test:
   override:
-    - ./gradlew testDebugUnitTest -PdisablePreDex
+    - ./gradlew testDebugUnitTest
 deployment:
   master:
     branch: master
