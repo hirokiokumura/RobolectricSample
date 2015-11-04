@@ -16,4 +16,4 @@ deployment:
   master:
     branch: master
     commands:
-      - ./gradlew assemble -PdisablePreDex
+      - ./gradlew :RobolectricSample:testDebugUnitTest -PdisablePreDex
