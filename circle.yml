@@ -1,3 +1,4 @@
+# https://circleci.com/docs/android
 machine:
   timezone: Asia/Tokyo
   java:
@@ -14,13 +15,14 @@ test:
     - $ANDROID_HOME/tools/emulator -avd test-target -no-skin -no-audio -no-window -no-boot-anim:
                 background: true
                 parallel: true
+    - circle-android wait-for-boot
 #    - ./wait.sh:
 #                parallel: true
   override:
 #    - ./gradlew connectedAndroidTestDebug -PdisablePreDex
     - ./gradlew testDebugUnitTest -PdisablePreDex
-deployment:
-  master:
-    branch: master
-    commands:
-      - ./gradlew assemble -PdisablePreDex
+#deployment:
+#  master:
+#    branch: master
+#    commands:
+#      - ./gradlew assemble -PdisablePreDex
