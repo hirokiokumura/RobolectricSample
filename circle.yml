@@ -15,7 +15,7 @@ dependencies:
 test:
   pre:
 #    - $ANDROID_HOME/tools/emulator -avd test-target -no-skin -no-audio -no-window -no-boot-anim:
-    - $ANDROID_HOME/tools/emulator -avd circleci-android22 -no-skin -no-audio -no-window:
+    - $ANDROID_HOME/tools/emulator -avd circleci-android23 -no-skin -no-audio -no-window:
                 background: true
                 parallel: true
     - circle-android wait-for-boot
