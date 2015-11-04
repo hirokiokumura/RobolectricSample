@@ -1,10 +1,12 @@
 # https://circleci.com/docs/android
+# http://in.fablic.co.jp/entry/circle-ci-in-android-project
 machine:
   timezone: Asia/Tokyo
   java:
     version: openjdk7
   environment:
      ANDROID_HOME: /usr/local/android-sdk-linux
+     JAVA_OPTS: "-Xmx2048m -XX:MaxPermSize=1024m"
 dependencies:
   cache_directories:
     - ~/.android
