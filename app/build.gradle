@@ -20,11 +20,12 @@ android {
             storePassword 'android'
         }
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfig.config
+            signingConfig signingConfigs.config
         }
         debug {
             minifyEnabled false
